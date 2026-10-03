@@ -1,0 +1,18 @@
+@import 'tailwindcss';
+
+/* A business's brand colour is injected per page as --brand / --brand-contrast (see BookingPage). */
+:root {
+  --brand: #111827;
+  --brand-contrast: #ffffff;
+}
+
+@theme inline {
+  --color-brand: var(--brand);
+  --color-on-brand: var(--brand-contrast);
+}
+
+body {
+  background-color: #fafaf9;
+  color: #1c1917;
+  -webkit-font-smoothing: antialiased;
+}
