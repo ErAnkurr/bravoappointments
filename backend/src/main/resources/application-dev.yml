@@ -1,0 +1,5 @@
+# Activated with SPRING_PROFILES_ACTIVE=dev. Never use this profile against a real database:
+# it loads demo seed data (db/dev) on top of the normal migrations.
+spring:
+  flyway:
+    locations: classpath:db/migration,classpath:db/dev
